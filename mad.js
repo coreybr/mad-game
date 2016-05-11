@@ -6,7 +6,7 @@ The company has been teasing its new [Product] for a while now, dropping images 
 <p>First off, [Company]'s Global Vice President [Full Name] claims that despite the huge display, the new [Company] [Product] is still \"extremely [Adjective 1].\" The screen is housed in a [Adjective 2] [Material] unibody, which makes the [Product] look stylish and premium. Under the hood, \
 the [Company] [Product] packs a [Number 2]-core processor, with [Number 3] GB of storage.</p>\
 <p>Processing power aside, other [Company] [Product] specifications include a [Noun 1] [Verb 1]er and a [Adjective 3] camera, along with innovative software that allows the user to [Verb 2] their [Plural Noun] with friends. Color options include [Color 1], [Color 2] and [Noun 3] [Color 3].</p>\
-<p>As expected, the [Company] [Product] comes at an affordable price, costing only [Number 4] dollars without a contract, or [Number 5] per month on-contract. \
+<p>As expected, the [Company] [Product] comes at an affordable price, costing only $[Number 4] without a contract, or $[Number 5] per month on-contract. \
 For more information on the [Company] [Product] specifications or to get a better look at the device's design, head over to [Company]'s website and take a look.</p>";
     var words = story.match(/([^[\]]+(?=]))(?!.*\1)/g);
     words.sort();
