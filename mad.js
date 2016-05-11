@@ -1,13 +1,12 @@
 window.onload = function() {
     labelContainer = document.getElementById("container--labels");
     formContainer = document.getElementById("container--form");
-        story = "<p>[Company] officially unveiled its latest device, and it's huge: meet the [Product], rocking a whopping [Number 1]-inch display. \
-The company has been teasing its new [Product] for a while now, dropping images and videos to boost the hype before the big unveiling. We already knew it would have a massive [Number 1]-inch screen, but let's see what else it brings to the table. </p>\
-<p>First off, [Company]'s Global Vice President [Full Name] claims that despite the huge display, the new [Company] [Product] is still \"extremely [Adjective 1].\" The screen is housed in a [Adjective 2] [Material] unibody, which makes the [Product] look stylish and premium. Under the hood, \
-the [Company] [Product] packs a [Number 2]-core processor, with [Number 3] GB of storage.</p>\
-<p>Processing power aside, other [Company] [Product] specifications include a [Noun 1] [Verb 1]er and a [Adjective 3] camera, along with innovative software that allows the user to [Verb 2] their [Plural Noun] with friends. Color options include [Color 1], [Color 2] and [Noun 2] [Color 3].</p>\
-<p>As expected, the [Company] [Product] comes at an affordable price, costing only $[Number 4] without a contract, or $[Number 5] per month on-contract. \
-For more information on the [Company] [Product] specifications or to get a better look at the device's design, head over to [Company]'s website and take a look.</p>";
+        story = "<p>[Company] [Adverb] unveiled its latest device, and it's huge: meet the new [Device], rocking a whopping [Number 1]-inch display. \
+The company has been teasing its new [Device] for a while now, dropping images and videos to boost the hype before the big unveiling. We already knew about the [Adjective 4] screen, but let's see what else it brings to the table. </p>\
+<p>First off, [Company]'s Global Vice President [Full Name] claims that despite the huge display, the new [Company] [Device] is still \"extremely [Adjective 1].\" The screen is housed in a [Adjective 2] [Material] unibody, which makes the [Device] look stylish and premium.</p>\
+<p>Looks aside, other [Company] [Device] specifications include a [Noun 1] [Verb 1]er and the company's new [Adjective 3] camera, along with innovative software that allows the user to [Verb 2] their [Plural Noun] with friends. Color options include [Color 1], [Color 2] and [Noun 2] [Color 3].</p>\
+<p>As expected, the [Company] [Device] comes at a [Adjective 5] price, costing only $[Number 2] per month on-contract. \
+For more information on the [Company] [Device] specifications or to get a better look at the device's design, head over to [Company]'s website and take a look.</p>";
     var words = story.match(/([^[\]]+(?=]))(?!.*\1)/g);
     words.sort();
     
