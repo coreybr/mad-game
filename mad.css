@@ -24,6 +24,7 @@ p {
     border-radius: 3px;
     height: 690px;
     width: 600px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -58,6 +59,8 @@ input {
 }
 
 input[type=submit] {
+    position: relative;
+    left: -59px;
     padding: 5px 20px;
     border: 0;
     border-radius: 5px;
