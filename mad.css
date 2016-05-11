@@ -17,7 +17,7 @@ h1{
     box-shadow: 10px 10px 36px -15px rgba(0,0,0,1);
     text-align: center;
     border-radius: 3px;
-    height: 690px;
+    height: 695px;
     width: 600px;
     padding: 5px 10px;
     margin: 0 auto;
@@ -55,21 +55,60 @@ input {
 
 input[type=submit] {
     padding: 5px 20px;
-    border: 0px;
+    border: 0;
     border-radius: 5px;
     text-decoration: none;
+    font-size: 1.25em;
     font-weight: bold;
-    background-color: #FFDF92;
+    background-color: #FFD265;
     color: #996800;
-    box-shadow: 0 3px 0 0 #DE9D00;
-    cursor: pointer;
+    cursor: pointer;    
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 input[type=submit]:hover {
-    background-color: #FFD265;
+  -webkit-animation-name: hvr-pulse-grow;
+  animation-name: hvr-pulse-grow;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
 }
 
-input[type=submit]:active {
-    background-color: #DE9D00;
-    color: rgb(233,221,198);
+input[type=submit]:active {   
+  -webkit-animation-name: hvr-pulse-grow;
+  animation-name: hvr-pulse-grow;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+/* Pulse Grow */
+@-webkit-keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+
+@keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
 }
