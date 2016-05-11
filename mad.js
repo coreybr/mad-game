@@ -44,11 +44,8 @@ function submitWords() {
     var innerContainer = document.getElementById("container--inner");
     for (var i=0; i < inputFields.length; i++) {
         console.log ("i: " + i);
-        console.log (inputFields[i].name);
-        console.log (inputFields[i].value);
         story = story.replace(new RegExp("\\[" + inputFields[i].name + "\\]", 'g'), inputFields[i].value);
     }
-            console.log ("fields: " + inputFields.length);
     labelContainer.innerHTML = "";
     formContainer.innerHTML = "";
     innerContainer.innerHTML = story;
