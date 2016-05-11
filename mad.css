@@ -2,7 +2,7 @@
 
 body {
     background-image: url(bg.png);
-    font-family: cursive;
+    font-family: 'Fontdiner Swanky', cursive;
     color: #094c6d;
 }
 
@@ -23,8 +23,8 @@ h1{
 }
 
 #container--input {
-    width: 270px;
-    margin: 5px auto;
+    width: 290px;
+    margin: 0 auto 5px auto;
     padding: 5px 10px;
 }
 
@@ -50,7 +50,6 @@ input:focus {
 input {
     line-height: 1.3em;
     margin: 0.205em 0;
-    font-family: cursive;
 }
 
 input[type=submit] {
@@ -58,6 +57,7 @@ input[type=submit] {
     border: 0;
     border-radius: 5px;
     text-decoration: none;
+    font-family: 'Fontdiner Swanky', cursive;
     font-size: 1.25em;
     font-weight: bold;
     background-color: #FFD265;
