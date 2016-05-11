@@ -43,7 +43,6 @@ function submitWords() {
     event.preventDefault();
     var innerContainer = document.getElementById("container--inner");
     for (var i=0; i < inputFields.length; i++) {
-        console.log ("i: " + i);
         story = story.replace(new RegExp("\\[" + inputFields[i].name + "\\]", 'g'), inputFields[i].value);
     }
     labelContainer.innerHTML = "";
