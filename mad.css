@@ -10,6 +10,10 @@ h1{
     color: #DE2200;
 }
 
+p {
+    font-family: sans;
+}
+
 /* Containers */
 
 .container {
