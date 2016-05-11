@@ -34,6 +34,7 @@ For more information on the [Company] [Device] specifications or to get a better
     var submit = document.createElement("input");
     submit.setAttribute('type', 'submit');
     submit.setAttribute('value', 'Submit');
+    submit.setAttribute('class', 'hvr-grow-shadow');
     form.appendChild(submit);
     formContainer.appendChild(form);
 };

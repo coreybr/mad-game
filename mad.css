@@ -15,14 +15,28 @@ p {
     font-family: sans;
 }
 
+.restart a {
+    text-decoration: none;
+    color: #094c6d;
+}
+
+/* Classes */
+
+.restart {
+    position: absolute;
+    left: 7px;
+    bottom: -20px;
+}
+
 /* Containers */
 
 .container {
+    position: relative;
     background-color: #EDFAFF;
     box-shadow: 10px 10px 36px -15px rgba(0,0,0,1);
     text-align: center;
     border-radius: 3px;
-    height: 690px;
+    height: 710px;
     width: 600px;
     max-width: 100%;
     margin: 0 auto;
@@ -70,23 +84,35 @@ input[type=submit] {
     font-weight: bold;
     background-color: #FFD265;
     color: #996800;
-    cursor: pointer;    
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: box-shadow, transform;
-    transition-property: box-shadow, transform;
 }
 
-input[type=submit]:hover, input[type=submit]:active {
-  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+/* Animations */
+
+.hvr-grow, .hvr-grow-shadow {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active, .hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+}
+
+.hvr-grow-shadow {
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+}
+
+.hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
 }
