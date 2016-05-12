@@ -1,12 +1,25 @@
 window.onload = function() {
-    labelContainer = document.getElementById("container--labels");
     formContainer = document.getElementById("container--form");
-        story = "<p>Today in [Location], [Company] [Adverb] unveiled its latest device: meet their new [Device 1], rocking a whopping [Number 1]-inch display. \
+    var selectStory = "<h3>Please select a story</h3> \
+                        <ul>\
+                        <li><a href=\"javascript:loadForm(new_device);\">New Device</a></li>\
+                        </ul>"  
+    formContainer.innerHTML = selectStory;
+    
+//Stories
+    
+    new_device = "<p>Today in [Location], [Company] [Adverb] unveiled its latest device: meet their new [Device 1], rocking a whopping [Number 1]-inch display. \
 The company has been teasing its new [Device 1] for a while now, dropping images and videos to boost the hype before the big unveiling. We already knew about the [Adjective 4] screen, but let's see what else it brings to the table. </p>\
 <p>First off, [Company]'s Global Vice President [Full Name] claims that despite the huge display, the new [Company] [Device 1] is still \"extremely [Adjective 1].\" The screen is housed in a [Adjective 2] [Material] unibody, which makes the [Device 1] look stylish and premium.</p>\
 <p>Looks aside, other [Company] [Device 1] specifications include a [Verb -ing] [Noun 1] and the company's new [Adjective 3] [Device 2], along with innovative software that allows the user to [Verb] their [Plural Noun] with friends. Color options include [Color 1], [Color 2], and [Noun 2] [Color 3].</p>\
 <p>As expected, the [Company] [Device 1] comes at a [Adjective 5] price, costing $[Number 2] per month on-contract. \
 For more information on the [Company] [Device 1] specifications or to get a better look at the device's design, head over to [Company]'s website and take a look.</p>";
+};
+
+function loadForm(a_story) {
+    formContainer.innerHTML = "";
+    story = a_story;
+    labelContainer = document.getElementById("container--labels");
     var words = story.match(/([^[\]]+(?=]))(?!.*\1)/g);
     words.sort();
     
@@ -41,8 +54,8 @@ For more information on the [Company] [Device 1] specifications or to get a bett
 
 //Submit routine
 function submitWords() {
-    event.preventDefault();
     var inputContainer = document.getElementById("container--input");
+    event.preventDefault();
     for (var i=0; i < inputFields.length; i++) {
         story = story.replace(new RegExp("\\[" + inputFields[i].name + "\\]", 'g'), inputFields[i].value);
     }
