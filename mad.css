@@ -9,15 +9,11 @@ body {
 h1{
     color: #DE2200;
     text-shadow: 1px 1px 2px rgba(150, 150, 150, 0.75);
+    text-align: center;
 }
 
 p {
     font-family: sans;
-}
-
-.restart a {
-    text-decoration: none;
-    color: #094c6d;
 }
 
 /* Classes */
@@ -28,22 +24,27 @@ p {
     bottom: -20px;
 }
 
+.restart a {
+    text-decoration: none;
+    color: #094c6d;
+}
+
 /* Containers */
 
 .container {
+    display: flex;
+    flex-direction: column;
     position: relative;
     background-color: #EDFAFF;
     box-shadow: 10px 10px 36px -15px rgba(0,0,0,1);
-    text-align: center;
+    /*text-align: center;*/
     border-radius: 3px;
-    height: 710px;
     width: 600px;
     max-width: 100%;
     margin: 0 auto;
 }
 
 #container--input {
-    width: 290px;
     margin: 0 auto 5px auto;
     padding: 5px 10px;
 }
@@ -54,6 +55,7 @@ p {
 
 #container--labels {
     text-align: right;
+    margin-right: 10px;
     line-height: 1.75em;
 }
 
@@ -97,7 +99,6 @@ input[type=submit] {
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   -webkit-transition-property: transform;
