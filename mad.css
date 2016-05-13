@@ -19,13 +19,22 @@ p {
     font-family: sans;
 }
 
-footer{
+a {
+    text-decoration: none;
+    color: #094c6d;
+}
+
+footer {
     position: fixed;
     bottom: 0;
     width: 100%;
     z-index: -1;
     font-family: Verdana, sans;
     font-size: small;
+}
+
+footer a {
+    text-decoration: underline;
 }
 
 /* Classes */
@@ -37,7 +46,6 @@ footer{
 }
 
 .restart a {
-    text-decoration: none;
     color: #094c6d;
 }
 
@@ -57,7 +65,7 @@ footer{
 
 #container--input {
     margin: 0 auto 5px auto;
-    padding: 5px 10px;
+    padding: 5px 10px 20px 10px;
 }
 
 #container--labels, #container--forms {
