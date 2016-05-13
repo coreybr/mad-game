@@ -2,8 +2,8 @@ window.onload = function() {
     formContainer = document.getElementById("container--form");
     var selectStory = "<h3>Please select a story</h3> \
                         <ul>\
-                        <li><a href=\"javascript:loadForm(new_device);\" class =\"hvr-grow\">New Device Unveiling</a></li>\
-                        <li><a href=\"javascript:loadForm(job_opening);\" class =\"hvr-grow\">Job Opening</a></li>\
+                        <li><a href=\"javascript:loadForm(new_device);\" class =\"hvr-grow\">New Device Unveiled</a></li>\
+                        <li><a href=\"javascript:loadForm(job_opening);\" class =\"hvr-grow\">Unusual Job Opening</a></li>\
                         </ul>"  
     formContainer.innerHTML = selectStory;
     
